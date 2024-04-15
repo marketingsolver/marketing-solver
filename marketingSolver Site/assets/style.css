@@ -1,0 +1,44 @@
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-decoration: none;
+  }
+  
+  @media (min-width: 48em) {
+    .site-title {
+      float: left;
+    }
+  }
+  
+  .nav-link {
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.8) !important;
+  }
+  
+  .social-nav .nav-link {
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+    line-height: 2.5rem;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus,
+  .active .nav-link {
+    color: rgba(0, 0, 0, 0.6) !important;
+  }
+
+  nav .container .btn{
+    background: #ffdd59;
+    color: white;
+    border-radius: 25px;
+  }
