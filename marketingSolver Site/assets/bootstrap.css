@@ -7027,6 +7027,7 @@ fieldset:disabled .btn {
 }
 .bg-light {
   background-color: #2c8cff !important;
+  color: white;
 }
 .bg-dark {
   background-color: #212529 !important;
