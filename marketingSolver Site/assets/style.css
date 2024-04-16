@@ -427,7 +427,6 @@ footer a:not(.nav-link) {
   }
   .marker:after {
     bottom: -30px;
-    left: 50%;
     margin-left: -60px;
   }
 }
