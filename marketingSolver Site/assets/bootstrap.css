@@ -3728,12 +3728,32 @@ fieldset:disabled .btn {
   list-style: none;
 }
 .nav-link {
-  display: block;
+  display: inline-block;
+  position: relative;
   padding: 0.5rem 1rem;
-  color: #212529;
+  color: #262b2f;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
+}
+
+.nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--bs-primary);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-item .nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: #dbd4d4c3;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
@@ -3847,6 +3867,7 @@ fieldset:disabled .btn {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  column-gap: 30px;
 }
 .navbar-nav .nav-link {
   padding-right: 0;
