@@ -2621,6 +2621,17 @@ fieldset:disabled .btn {
   color: #000;
   background-color: #f6e05e;
   border-color: #f6e05e;
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7d2ae8;
+  transition: all 0.2s ease;
+}
+.btn-primary:active {
+  transform: scale(0.96);
 }
 .btn-primary:hover {
   color: #000;
@@ -3967,15 +3978,19 @@ fieldset:disabled .btn {
 .navbar-expand .navbar-toggler {
   display: none;
 }
-.navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9);
+.navbar-light .navbar-brand span {
+  color: var(--bs-white);
 }
-.navbar-light .navbar-brand:focus,
-.navbar-light .navbar-brand:hover {
-  color: rgba(0, 0, 0, 0.9);
+/* .navbar-light .navbar-brand:focus, */
+/* .navbar-light .navbar-brand:hover {
+  color: var(--bs-primary);
+} */
+/* .navbar-brand span:focus, */
+.navbar-brand span:hover {
+  color: var(--bs-primary);
 }
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.55);
+.navbar-nav .nav-item .nav-link {
+  color: rgba(42, 34, 34, 0.55);
 }
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
@@ -6936,7 +6951,7 @@ fieldset:disabled .btn {
   background-color: #e9573f !important;
 }
 .bg-light {
-  background-color: #f4f6f8 !important;
+  background-color: #0d6efd !important;
 }
 .bg-dark {
   background-color: #212529 !important;
