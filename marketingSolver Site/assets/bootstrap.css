@@ -7061,9 +7061,8 @@ fieldset:disabled .btn {
   color: white;
 }
 .bg-card{
-  background-color: white;
   border: none;
-  box-shadow: 5px 5px 10px grey;
+  box-shadow: 5px 5px 10px #b3b2b2;
   cursor: pointer;
 }
 .bg-dark {

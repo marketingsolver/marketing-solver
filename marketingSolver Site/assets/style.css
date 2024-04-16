@@ -105,14 +105,47 @@ img.avatar {
 
 /* Grid Item */
 
-.bg-card .display-y{
+.bg-card{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    transition: .8s ease-in-out;
+}
+
+.display-y{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    color: red;
-    width: 500px;
-    height: 500px;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    transition: 1s ease-in-out;
+    z-index: -1;
+}
+
+.display-w{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(0, 194, 16);
+    transition: 1s ease-in-out;
+    z-index: -1;
+}
+
+.bg-card:hover .display-y, .bg-card:hover .display-w{
+    transform: scale(50);
+}
+
+.bg-card:hover{
+    color: white;
+    z-index: 10;
 }
 
 .grid-sizer,
