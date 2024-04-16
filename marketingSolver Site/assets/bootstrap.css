@@ -2606,6 +2606,10 @@ textarea.form-control.is-invalid {
 .btn:hover {
   color: #212529;
 }
+
+.btn-primary:hover{
+  background: white;
+}
 .btn-check:focus + .btn,
 .btn:focus {
   outline: 0;
@@ -7055,6 +7059,12 @@ fieldset:disabled .btn {
 .bg-light {
   background-color: #2c8cff !important;
   color: white;
+}
+.bg-card{
+  background-color: white;
+  border: none;
+  box-shadow: 5px 5px 10px grey;
+  cursor: pointer;
 }
 .bg-dark {
   background-color: #212529 !important;
