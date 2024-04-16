@@ -3727,11 +3727,16 @@ fieldset:disabled .btn {
   margin-bottom: 0;
   list-style: none;
 }
+
+.nav-link.active{
+  color: var(--bs-primary);
+}
+
 .nav-link {
   display: inline-block;
   position: relative;
   padding: 0.5rem 1rem;
-  color: #262b2f;
+  color: #dadada;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
@@ -3750,19 +3755,20 @@ fieldset:disabled .btn {
   transition: transform 0.25s ease-out;
 }
 
+.nav-link.active::after,
 .nav-item .nav-link:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
-  color: #dbd4d4c3;
+  color: #ffffff;
 }
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;
   }
 }
-.nav-link:focus,
+
 .nav-link:hover {
-  color: #b5b5b6;
+  color: #ffffffe0;
 }
 .nav-link.disabled {
   color: #6c757d;

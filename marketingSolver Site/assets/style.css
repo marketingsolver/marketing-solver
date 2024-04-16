@@ -214,6 +214,10 @@ img.avatar {
   height: 30px;
 }
 
+.logo-img{
+    width:100px;
+}
+
 .icon {
   display: inline-block;
   width: 20px;
