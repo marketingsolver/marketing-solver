@@ -3762,7 +3762,7 @@ fieldset:disabled .btn {
 }
 .nav-link:focus,
 .nav-link:hover {
-  color: #6c757d;
+  color: #b5b5b6;
 }
 .nav-link.disabled {
   color: #6c757d;
