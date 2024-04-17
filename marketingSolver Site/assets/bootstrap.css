@@ -2608,7 +2608,9 @@ textarea.form-control.is-invalid {
 }
 
 .btn-primary:hover{
-  background: white;
+  background: var(--bs-primary);
+  border: none;
+  color: white;
 }
 .btn-check:focus + .btn,
 .btn:focus {
@@ -2624,7 +2626,6 @@ fieldset:disabled .btn {
 .btn-primary {
   background-color: #f6e05e;
   position: relative;
-  padding: 10px 22px;
   color: #fff;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -3848,6 +3849,7 @@ fieldset:disabled .btn {
   justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  z-index: 10;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4512,7 +4514,8 @@ fieldset:disabled .btn {
 }
 .badge {
   display: inline-block;
-  padding: 0.35em 0.65em;
+  background: var(--bs-primary);
+  padding: 0.35em 0.45em;
   font-size: 0.75em;
   font-weight: 700;
   line-height: 1;
