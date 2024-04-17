@@ -2603,12 +2603,8 @@ textarea.form-control.is-invalid {
     transition: none;
   }
 }
-.btn:hover {
-  color: #212529;
- 
-}
 
-.btn-primary:hover{
+.btn-main:hover{
   background: var(--bs-primary);
   border: none;
   color: white;
@@ -2624,7 +2620,7 @@ fieldset:disabled .btn {
   pointer-events: none;
   opacity: 0.65;
 }
-.btn-primary {
+.btn-main {
   background-color: #f6e05e;
   position: relative;
   color: #fff;
@@ -2633,13 +2629,9 @@ fieldset:disabled .btn {
   z-index: 100;
 }
 
-.btn-primary:active {
-  transform: scale(0.96);
-}
 
-
-.btn-primary::before,
-.btn-primary::after {
+.btn-main::before,
+.btn-main::after {
   position: absolute;
   content: "";
   width: 150%;
@@ -2650,7 +2642,7 @@ fieldset:disabled .btn {
   background-repeat: no-repeat;
 }
 
-.btn-primary:hover::before {
+.btn-main:hover::before {
   top: -70%;
   background-image: radial-gradient(circle, var(--bs-primary) 20%, transparent 20%),
     radial-gradient(circle, transparent 20%, var(--bs-primary) 20%, transparent 30%),
@@ -2685,7 +2677,7 @@ fieldset:disabled .btn {
   }
 }
 
-.btn-primary:hover::after {
+.btn-main:hover::after {
   bottom: -70%;
   background-image: radial-gradient(circle, var(--bs-primary) 20%, transparent 20%),
     radial-gradient(circle, var(--bs-primary) 20%, transparent 20%),
@@ -2717,32 +2709,36 @@ fieldset:disabled .btn {
   }
 }
 
+.service-content{
+  color: black;
+}
 
-.btn-check:focus + .btn-primary,
-.btn-primary:focus {
+.btn-check:focus + .btn-main,
+.btn-main:focus {
   color: #000;
   background-color: #f7e576;
   border-color: #f7e36e;
   box-shadow: 0 0 0 0.25rem rgba(209, 190, 80, 0.5);
 }
-.btn-check:active + .btn-primary,
-.btn-check:checked + .btn-primary,
-.btn-primary.active,
-.btn-primary:active,
-.show > .btn-primary.dropdown-toggle {
+.btn-check:active + .btn-main,
+.btn-check:checked + .btn-main,
+.btn-main.active,
+.btn-main:active,
+.show > .btn-main.dropdown-toggle {
   color: #000;
   background-color: #f8e67e;
   border-color: #f7e36e;
 }
-.btn-check:active + .btn-primary:focus,
-.btn-check:checked + .btn-primary:focus,
-.btn-primary.active:focus,
-.btn-primary:active:focus,
-.show > .btn-primary.dropdown-toggle:focus {
+.btn-check:active + .btn-main:focus,
+.btn-check:checked + .btn-main:focus,
+.btn-main.active:focus,
+.btn-main:active:focus,
+.show > .btn-main.dropdown-toggle:focus {
+  background: var(--bs-primary);
   box-shadow: 0 0 0 0.25rem rgba(209, 190, 80, 0.5);
 }
-.btn-primary.disabled,
-.btn-primary:disabled {
+.btn-main.disabled,
+.btn-main:disabled {
   color: #000;
   background-color: #f6e05e;
   border-color: #f6e05e;
@@ -10403,4 +10399,3 @@ hr {
     box-shadow: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.min.css.map */
