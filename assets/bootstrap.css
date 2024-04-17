@@ -3816,12 +3816,24 @@ fieldset:disabled .btn {
   transition: transform 0.25s ease-out;
 }
 
+#navbar-nav.active{
+  content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--bs-primary);
+}
+
 .nav-link.active::after,
 .nav-item .nav-link:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
   color: #ffffff;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .nav-link {
     transition: none;

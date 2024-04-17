@@ -53,9 +53,12 @@ html {
 }
 
 .nav-link:hover,
-.nav-link:focus,
 .active .nav-link {
-  color: #d4d4d4ba !important;
+  color: #ffffffba !important;
+}
+
+.nav-link:hover{
+  color: #fdf497 !important;
 }
 
 /* Hero (intro) section */

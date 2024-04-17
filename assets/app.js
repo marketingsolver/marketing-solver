@@ -4173,6 +4173,18 @@
     );
   });
 
+// Active Navbar link on click events
+const navbarLinks = document.querySelectorAll('#navbar-nav a');
+
+// Loop through each link and add click event listener
+navbarLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    // Prevent default link behavior
+    document.querySelector(".active")?.classList.remove("active");
+    link.classList.add("active");
+  });
+});
+
 // Popup Meassage for Our Services
 
 // let popup = document.getElementById("popup");
