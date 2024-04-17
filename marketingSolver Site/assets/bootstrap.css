@@ -3301,17 +3301,36 @@ fieldset:disabled .btn {
 }
 
 /* Popup Message */
-.popup{
+
+.page-content#blur.active{
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+
+}
+#popup{
   width: 300px;
-  background: #ebd05b;
-  border-radius: 6px;
+  background: #5d90de;
+  border-radius: 10px;
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 0 30px 30px;
   color: #000;
+  visibility: hidden;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#popup.active{
+  position: absolute;
+  visibility: visible;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);  
 }
 
 .popup img{
@@ -3327,7 +3346,18 @@ fieldset:disabled .btn {
   margin: 30px 0 10px;
 }
 
-.popup
+.popup button{
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: var(--bs-primary);
+  color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+}
 
 .btn-group-lg > .btn,
 .btn-lg {
