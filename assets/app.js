@@ -4174,39 +4174,3 @@
   });
 
 // Popup Meassage for Our Services
-
-// let popup = document.getElementById("popup");
-
-// document.addEventListener("DOMContentLoaded", function() {
-//   let popup = document.getElementById("popup");
-//   let openPopupButton = document.getElementById("openPopup");
-//   let addBlur = document.getElementById("blur");
-
-//   openPopupButton.addEventListener("click", function() {
-//       openPopup(popup);
-//   });
-// });
-
-document.addEventListener("DOMContentLoaded", function() {
-  let openPopupButton = document.getElementById("openPopup");
-
-  openPopupButton.addEventListener("click", function() {
-          openPopup(popup);
-      });
-});
-
-function openPopup(){
-  let blur = document.getElementById("blur");
-  blur.classList.toggle("active");
-  let popup = document.getElementById("popup");
-  popup.classList.toggle("active");
-  
-}
-
-function closePopup(){
-  popup.classList.remove("open-popup");
-  document.body.classList.remove("blur-background");
-}
-
-
-
