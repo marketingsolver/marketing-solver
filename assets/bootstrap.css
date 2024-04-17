@@ -2623,6 +2623,7 @@ fieldset:disabled .btn {
 .btn-main {
   background-color: #f6e05e;
   position: relative;
+  border: none;
   color: #fff;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -2737,12 +2738,7 @@ fieldset:disabled .btn {
   background: var(--bs-primary);
   box-shadow: 0 0 0 0.25rem rgba(209, 190, 80, 0.5);
 }
-.btn-main.disabled,
-.btn-main:disabled {
-  color: #000;
-  background-color: #f6e05e;
-  border-color: #f6e05e;
-}
+
 .btn-secondary {
   color: #fff;
   background-color: #343a40;
