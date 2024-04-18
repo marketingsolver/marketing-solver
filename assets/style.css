@@ -251,13 +251,13 @@ img.avatar {
   left: 0;
   width: 100%;
   padding: 12px;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 223, 40, 0.75);
   transition: transform 0.35s;
   transform: translate3d(0, 100%, 0);
 }
 
 .portfolio-item figcaption h4 {
-  color: #222;
+  color: white;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
@@ -265,7 +265,7 @@ img.avatar {
 }
 
 .portfolio-item figcaption p {
-  color: #444;
+  color: white;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 0;
