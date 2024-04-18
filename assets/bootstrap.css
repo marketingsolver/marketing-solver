@@ -1280,12 +1280,23 @@ progress {
     width: 80%;
     height: 80%;
   }
+
+  .map iframe{
+    width: 430px;
+    height: 250px;
+  }
 }
 @media screen and (max-width:425px) {
   .gif{
     width: 200%;
     height: 96%;
   }
+
+  .map iframe{
+    width: 370px;
+    height: 250px;
+  }
+   
 }
 .insta img{
   width: 45px;
@@ -1301,6 +1312,7 @@ progress {
 
 .twitt img{
   width: 42px;
+
 }
 @media screen and (max-width:375px) {
   .gif{
@@ -1327,6 +1339,12 @@ progress {
   .twitt img{
     width: 32px;
   }
+
+  .map iframe{
+    width: 320px;
+    height: 150px;
+  }
+   
 }
 
 
@@ -3355,36 +3373,48 @@ fieldset:disabled .btn {
 
 /* Popup Message */
 
-.page-content#blur.active{
-  filter: blur(10px);
-  pointer-events: none;
-  user-select: none;
-
-}
-#popup{
-  width: 300px;
-  background: #5d90de;
-  border-radius: 10px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 0 30px 30px;
+.popup{
   color: #000;
-  visibility: hidden;
-  opacity: 1;
-  transition: 0.5s;
+  z-index: 9999;;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.994);
+  backdrop-filter: blur(5px);
+  display: none;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  /* visibility: hidden; */
 }
 
-#popup.active{
-  position: absolute;
-  visibility: visible;
-  top: 50%;
-  left: 50%;
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);  
+.popup-box{
+  position: relative;
+  max-width: 350px;
+  color: #000;
+  /* background: #fdfdfd; */
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 50px 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.75);
+  transform: scale(0);
+  transition-property: transform;
 }
+
+.popup.active .popup-box{
+  transform: scale(1);
+}
+
+.popup-box h2{
+  font-size: 30px;
+  font-weight: 700;
+  margin: 30px 0 10px;
+}
+
 
 .popup img{
   width: 100px;
@@ -3393,11 +3423,7 @@ fieldset:disabled .btn {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
 
-.popup h2{
-  font-size: 38px;
-  font-weight: 700;
-  margin: 30px 0 10px;
-}
+
 
 .popup button{
   width: 100%;

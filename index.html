@@ -294,7 +294,7 @@
                 <div class="h5 mt-3">Youtube Marketing</div>
                 <p class="text-small">digital marketing strategy that involves using the YouTube platform to promote
                   products, services, brands, or messages to a targeted audience.</p>
-                <button class="btn-main px-2 rounded-5" onclick="openPopup()">Learn More</button>
+                <button class="btn-main px-2 rounded-5" onclick="showPopup()" id="popupButton">Learn More</button>
               </div>
             </div>
 
@@ -326,6 +326,14 @@
                   online advertisements.</p><button class="btn-main px-2 rounded-5">Learn More</button>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div class="popup" id="popup">
+          <div class="popup-box">
+            <h2>YouTube Marketing</h2>
+            <p>digital marketing strategy that involves using the YouTube platform to promote products, services, brands, or messages to a targeted audience</p>
+            <a href="#" class="btn btn-main" id="closeButton">Close</a>
           </div>
         </div>
       </section>
@@ -527,8 +535,8 @@
                   </div>
                 </div>
                 <div class="map col-sm-2">
-                  <div class="pb-1"></div>
-                    <div class="map-content">
+                  <div class="pb-1">
+                    
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d931.6001937619029!2d72.91429096961734!3d20.936414651355083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0f7d45609ea35%3A0x80b6ebd35495b5f7!2smarketingsolver.in!5e0!3m2!1sen!2sin!4v1713434180297!5m2!1sen!2sin"
                       width="500" height="250" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">

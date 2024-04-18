@@ -4198,3 +4198,24 @@
 });
 
 // Popup Meassage for Our Services
+const popupButton = document.getElementById('popupButton');
+// const popup = document.getElementById('popup');
+const closeButton = document.getElementById('closeButton');
+
+// Function to show the popup
+function showPopup() {
+  popup.style.display = 'block';
+}
+
+// Function to close the popup
+function closePopup() {
+  popup.style.display = 'none';
+}
+
+showPopup();
+
+// Event listener for the button click
+
+// Event listener for the close button click
+
+// Close the popup if the user clicks outside of it
