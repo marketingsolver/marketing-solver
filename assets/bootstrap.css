@@ -4172,16 +4172,23 @@ fieldset:disabled .btn {
     font-style: normal;
     color: var(--bs-primary);
     background:none;
+    width: 100%;
+    text-align: center;
 }
 
 .navbar-light .navbar-brand .brand-content p {
   color: var(--bs-white);
 }
-/* .navbar-light .navbar-brand:focus, */
-/* .navbar-light .navbar-brand:hover {
-  color: var(--bs-primary);
-} */
-/* .navbar-brand .brand-content p:focus, */
+
+.navbar-toggler {
+  border: none;
+  color: var(--bs-white);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 .navbar-brand .brand-content p:hover {
   color: var(--bs-primary);
 }

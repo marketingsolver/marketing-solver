@@ -28,6 +28,51 @@
   /**
    * Navbar effects and scrolltop buttons upon scrolling
    */
+
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+  // Loop through each navigation link
+  navLinks.forEach(link => {
+    // Add click event listener to each link
+    link.addEventListener('click', function() {
+      // Remove active class from all links
+      navLinks.forEach(navLink => {
+        navLink.classList.remove('active');
+      });
+
+      // Add active class to the clicked link
+      this.classList.add('active');
+    });
+  });
+
+  function setActiveNavLink() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    sections.forEach(section => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const bottom = top + height;
+
+      if (window.scrollY >= top && window.scrollY < bottom) {
+        const sectionId = section.getAttribute('id');
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${sectionId}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }
+
+  // Listen for scroll events
+  window.addEventListener('scroll', setActiveNavLink);
+
+  // Call setActiveNavLink initially to set the active class on page load
+  setActiveNavLink();
+
   const navbar = document.getElementById("header-nav");
   var body = document.getElementsByTagName("body")[0];
   const scrollTop = document.getElementById("scrolltop");

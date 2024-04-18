@@ -114,6 +114,13 @@ html {
   background-repeat: no-repeat;
 }
 
+.wave-top{
+  position: absolute;
+  top: 0;
+  left:0%;
+  rotate: 180deg;
+}
+
 img.avatar {
   border-radius: 30px;
 }
