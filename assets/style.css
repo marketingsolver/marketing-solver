@@ -52,10 +52,6 @@ html {
   gap: 10px;
 }
 
-.social-logo{
-  width: ;
-}
-
 .nav-link:hover,
 .active .nav-link {
   color: #ffffffba !important;

@@ -1293,25 +1293,7 @@ progress {
   }
    
 }
-<<<<<<< HEAD
-=======
-.insta img{
-  width: 45px;
-}
 
-.face img{
-  width: 45px;
-}
-
-.linked img{
-  width: 45px;
-}
-
-.twitt img{
-  width: 42px;
-
-}
->>>>>>> 7868324e14deefe60a8b743342d603d45aa45420
 @media screen and (max-width:375px) {
   .gif{
     width: 200%;
