@@ -2627,7 +2627,7 @@ fieldset:disabled .btn {
   color: #fff;
   cursor: pointer;
   transition: all 0.2s ease;
-  z-index: 100;
+  z-index: 10;
 }
 
 
@@ -3415,7 +3415,7 @@ fieldset:disabled .btn {
 }
 .dropdown-menu {
   position: absolute;
-  z-index: 1000;
+  z-index: 10;
   display: none;
   min-width: 10rem;
   padding: 0.5rem 0;
@@ -3777,6 +3777,14 @@ fieldset:disabled .btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.preloader{
+  height: 100vh;
+  width: 100%;
+  background: #000000;
+  z-index: 100;
+}
+
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -4146,11 +4154,12 @@ fieldset:disabled .btn {
   line-height: 5%;
 }
 
-.navbar-light .navbar-brand .brand-content .agency{
+.page-heading{
     font-family: "Play", sans-serif;
     font-weight: 700;
     font-style: normal;
     color: var(--bs-primary);
+    background:none;
 }
 
 .navbar-light .navbar-brand .brand-content p {
