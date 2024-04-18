@@ -263,6 +263,7 @@ figure {
 }
 img,
 svg {
+  width: 56px;
   vertical-align: middle;
 }
 table {
@@ -3789,7 +3790,7 @@ fieldset:disabled .btn {
   color: var(--bs-primary);
 }
 
-.nav-link {
+.nav-link{
   display: inline-block;
   position: relative;
   padding: 0.5rem 1rem;
@@ -3812,16 +3813,6 @@ fieldset:disabled .btn {
   transition: transform 0.25s ease-out;
 }
 
-#navbar-nav.active{
-  content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--bs-primary);
-}
 
 .nav-link.active::after,
 .nav-item .nav-link:hover::after {
@@ -7082,8 +7073,9 @@ fieldset:disabled .btn {
   color: #e9573f !important;
 }
 .text-light {
+  align-items: baseline;
   color: #f4f6f8 !important;
-  gap: 10px;
+  gap: 16px;
 }
 .text-dark {
   color: #212529 !important;

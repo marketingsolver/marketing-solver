@@ -52,6 +52,23 @@ html {
   gap: 10px;
 }
 
+.insta img{
+  width: 45px;
+}
+
+.face img{
+  width: 45px;
+}
+
+.linked img{
+  width: 45px;
+}
+
+.twitt img{
+  width: 42px;
+}
+
+
 .nav-link:hover,
 .active .nav-link {
   color: #ffffffba !important;
