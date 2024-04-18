@@ -45,6 +45,33 @@
     });
   });
 
+  function setActiveNavLink() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    sections.forEach(section => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const bottom = top + height;
+      const scrollY = window.scrollY;
+
+      if (scrollY >= top && scrollY < bottom) {
+        const sectionId = section.getAttribute('id');
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${sectionId}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  }
+
+  window.addEventListener('scroll', setActiveNavLink);
+
+  setActiveNavLink();
+
   const navbar = document.getElementById("header-nav");
   var body = document.getElementsByTagName("body")[0];
   const scrollTop = document.getElementById("scrolltop");

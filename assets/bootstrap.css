@@ -321,12 +321,7 @@ select:disabled {
 [list]::-webkit-calendar-picker-indicator {
   display: none;
 }
-/* [type="button"],
-[type="reset"],
-[type="submit"],
-button {
-  -webkit-appearance: button;
-} */
+
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled),
@@ -1287,21 +1282,6 @@ progress {
     height: 96%;
   }
 }
-.insta img{
-  width: 45px;
-}
-
-.face img{
-  width: 45px;
-}
-
-.linked img{
-  width: 45px;
-}
-
-.twitt img{
-  width: 42px;
-}
 @media screen and (max-width:375px) {
   .gif{
     width: 200%;
@@ -1309,27 +1289,9 @@ progress {
   }
 
   .social-nav{
-    width: 114%;
-  }
-
-  .insta img{
-    width: 35px;
-  }
-
-  .face img{
-    width: 35px;
-  }
-  
-  .linked img{
-    width: 35px;
-  }
-  
-  .twitt img{
-    width: 32px;
+    width: 100%;
   }
 }
-
-
 
 @media (min-width: 1200px) {
   .col-xl {
@@ -3905,7 +3867,7 @@ fieldset:disabled .btn {
 }
 
 .nav-link:hover {
-  color: #ffffffe0;
+  color: var(--bs-primary);
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -7187,7 +7149,7 @@ fieldset:disabled .btn {
   color: #212529 !important;
 }
 .text-muted {
-  color: #000 !important;
+  color: #fff !important;
   font-weight: normal;
 }
 .text-black-50 {
