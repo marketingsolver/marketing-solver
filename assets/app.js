@@ -4232,6 +4232,7 @@ const closeButton = document.getElementById('closeButton');
 // Function to show the popup
 function showPopup() {
   popup.style.display = 'block';
+  $('body').css('overflow', 'hidden');
 }
 
 // Function to close the popup
@@ -4240,6 +4241,7 @@ function closePopup() {
 }
 
 showPopup();
+closePopup();
 
 // Event listener for the button click
 

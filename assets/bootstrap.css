@@ -3336,68 +3336,16 @@ fieldset:disabled .btn {
 /* Popup Message */
 
 .popup{
-  color: #000;
-  z-index: 9999;;
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.994);
-  backdrop-filter: blur(5px);
+  width: 100vw;
+  height: 100vh;
+  background: rgba(228, 227, 227, 0.252);
+  backdrop-filter: blur(3px);
+  z-index: 999;
   display: none;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  /* visibility: hidden; */
 }
 
 .popup-box{
-  position: relative;
-  max-width: 350px;
-  color: #000;
-  /* background: #fdfdfd; */
-  backdrop-filter: blur(10px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: 20px;
-  padding: 50px 40px;
-  border-radius: 10px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.75);
-  transform: scale(0);
-  transition-property: transform;
-}
-
-.popup.active .popup-box{
-  transform: scale(1);
-}
-
-.popup-box h2{
-  font-size: 30px;
-  font-weight: 700;
-  margin: 30px 0 10px;
-}
-
-
-.popup img{
-  width: 100px;
-  margin-top: -50px;
-  border-radius: 50%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
-}
-
-
-
-.popup button{
-  width: 100%;
-  margin-top: 50px;
-  padding: 10px 0;
-  background: var(--bs-primary);
-  color: #fff;
-  font-size: 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  border: none;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+background: red;
 }
 
 .btn-group-lg > .btn,
