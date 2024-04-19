@@ -3338,14 +3338,23 @@ fieldset:disabled .btn {
 .popup{
   width: 100vw;
   height: 100vh;
-  background: rgba(228, 227, 227, 0.252);
+  background: #07070728;
   backdrop-filter: blur(3px);
-  z-index: 999;
-  display: none;
+  z-index: 10;
+  /* display: none; */
 }
 
 .popup-box{
-background: red;
+background: white;
+overflow: hidden;
+}
+
+.popup-box h2{
+  color: red;
+}
+
+.popup-box p{
+  color: white;
 }
 
 .btn-group-lg > .btn,
