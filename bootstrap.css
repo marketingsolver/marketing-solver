@@ -3357,6 +3357,14 @@ overflow: hidden;
   color: white;
 }
 
+.close-btn{
+  z-index: 100;
+}
+
+.close-btn i{
+  color: #fd0d2593;
+}
+
 .btn-group-lg > .btn,
 .btn-lg {
   padding: 0.5rem 1rem;
