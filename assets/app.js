@@ -4224,7 +4224,7 @@
   );
 });
 
-// Popup Meassage for Our Services
+// YouTube Marketing Popup Meassage for Our Services
 const popupButton = document.getElementById('popupButton');
 // const popup = document.getElementById('popup');
 const closeButton = document.getElementById('closeButton');
@@ -4232,7 +4232,6 @@ const closeButton = document.getElementById('closeButton');
 // Function to show the popup
 function showPopup() {
   popup.style.display = 'block';
-  $('body').css('overflow', 'hidden');
 }
 
 // Function to close the popup
@@ -4243,8 +4242,60 @@ function closePopup() {
 showPopup();
 closePopup();
 
-// Event listener for the button click
 
-// Event listener for the close button click
+// Web Services Popup Meassage for Our Services
+const popupBtn = document.getElementById('openButton');
+// const popup = document.getElementById('web_serv');
+const closeBtn = document.getElementById('closeBtn');
 
-// Close the popup if the user clicks outside of it
+// Function to show the popup
+function openPopup() {
+  web_serv.style.display = 'block';
+}
+
+// Function to close the popup
+function closeWeb() {
+  web_serv.style.display = 'none';
+}
+
+openPopup();
+closeWeb();
+
+
+// Meta Campaigns Popup Meassage for Our Services
+const metaBtn = document.getElementById('openMetaBtn');
+// const popup = document.getElementById('web_serv');
+const closeMetaBtn = document.getElementById('closeMeta');
+
+// Function to show the popup
+function openMeta() {
+  meta_camp.style.display = 'block';
+}
+
+// Function to close the popup
+function closeMeta() {
+  meta_camp.style.display = 'none';
+}
+
+openMeta();
+closeMeta();
+
+
+
+// SEO Strategy Popup Meassage for Our Services
+const seoBtn = document.getElementById('openSEOBtn');
+// const popup = document.getElementById('web_serv');
+const closeSeoBtn = document.getElementById('closeSeo');
+
+// Function to show the popup
+function openSeo() {
+  seo_strat.style.display = 'block';
+}
+
+// Function to close the popup
+function closeSeo() {
+  seo_strat.style.display = 'none';
+}
+
+openSeo();
+closeSeo();

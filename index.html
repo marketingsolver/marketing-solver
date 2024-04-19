@@ -279,7 +279,7 @@
                   <div class="h5 mt-3">Web Services</div>
                   <p class="text-small"> Its integral components of digital marketing strategies aimed at establishing a
                     strong online presence. Web design involves the creation</p>
-                  <button class="btn-main px-2 rounded-5">Learn More</button>
+                  <button class="btn-main px-2 rounded-5" onclick="openPopup()" id="openButton">Learn More</button>
                 </div>
               </div>
               <div class="col-md-3 text-center mb-3" data-aos="fade-up" data-aos-delay="300">
@@ -288,7 +288,7 @@
                 <div class="bg-white rounded-5 service-content p-3 mt-n4">
                   <div class="h5 mt-3">Meta Campaigns</div>
                   <p class="text-small"> Refer to advertising campaigns run on the platforms owned by Meta Platforms,
-                    formerly known as Facebook.</p><button class="btn-main px-2 rounded-5">Learn More</button>
+                    formerly known as Facebook.</p><button class="btn-main px-2 rounded-5" onclick="openMeta()" id="openMetaBtn">Learn More</button>
                 </div>
               </div>
               <div class="col-md-3 text-center mb-3" data-aos="fade-up" data-aos-delay="300">
@@ -297,12 +297,15 @@
                 <div class="bg-white rounded-5 service-content p-3 mt-n4">
                   <div class="h5 mt-3">SEO Strategy</div>
                   <p class="text-small">powerful digital marketing platform that allows businesses to create and manage
-                    online advertisements.</p><button class="btn-main px-2 rounded-5">Learn More</button>
+                    online advertisements.</p><button class="btn-main px-2 rounded-5" onclick="openSeo()" id="openSEOBtn">Learn More</button>
                 </div>
               </div>
             </div>
           </div>
 
+
+          <!-- POPUP Meassage Section -->
+          <!-- YouTube Marketing PopUp Box Open -->
           <div class="popup position-fixed top-50 start-50 translate-middle" id="popup">
             <div class="popup-box rounded-5 p-5 text-light position-absolute top-50 start-50 translate-middle">
               <button class="btn text-light fs-1 position-absolute end-0 translate-middle" onclick="closePopup()" id="closeButton"><i
@@ -310,6 +313,39 @@
               <h2>YouTube Marketing</h2>
               <p>digital marketing strategy that involves using the YouTube platform to promote products, services,
                 brands, or messages to a targeted audience</p>
+            </div>
+          </div>
+
+          <!-- Web Services PopUp Box Open -->            
+          <div class="popup web_serv position-fixed top-50 start-50 translate-middle" id="web_serv">
+            <div class="popup-box rounded-5 p-5 text-light position-absolute top-50 start-50 translate-middle">
+              <button class="btn text-light fs-1 position-absolute end-0 translate-middle" onclick="closeWeb()" id="closeBtn"><i
+                  class="fa-solid fa-xmark"></i></button>
+              <h2>Web Services</h2>
+              <p>Its integral components of digital marketing strategies aimed at establishing a
+                strong online presence. Web design involves the creation</p>
+            </div>
+          </div>
+
+          <!-- Meta Campaigns PopUp Box Open -->            
+          <div class="popup meta_camp position-fixed top-50 start-50 translate-middle" id="meta_camp">
+            <div class="popup-box rounded-5 p-5 text-light position-absolute top-50 start-50 translate-middle">
+              <button class="btn text-light fs-1 position-absolute end-0 translate-middle" onclick="closeMeta()" id="closeMeta"><i
+                  class="fa-solid fa-xmark"></i></button>
+              <h2>Meta Campaigns</h2>
+              <p> Refer to advertising campaigns run on the platforms owned by Meta Platforms,
+                formerly known as Facebook.</p>
+            </div>
+          </div>
+
+          <!-- SEO Strategy PopUp Box Open -->            
+          <div class="popup seo_strat position-fixed top-50 start-50 translate-middle" id="seo_strat">
+            <div class="popup-box rounded-5 p-5 text-light position-absolute top-50 start-50 translate-middle">
+              <button class="btn text-light fs-1 position-absolute end-0 translate-middle" onclick="closeSeo()" id="closeSeo"><i
+                  class="fa-solid fa-xmark"></i></button>
+              <h2>SEO Strategy</h2>
+              <p>powerful digital marketing platform that allows businesses to create and manage
+                online advertisements.</p>
             </div>
           </div>
         </div>
