@@ -2666,7 +2666,7 @@ fieldset:disabled .btn {
   color: #fff;
   cursor: pointer;
   transition: all 0.2s ease;
-  z-index: 10;
+  z-index: 5;
 }
 
 
@@ -3354,12 +3354,18 @@ overflow: hidden;
   flex-direction: column;
 }
 
+.popup-grid{
+  display: block;
+}
+
 .popup-box p{
   color: white;
 }
 
 .close-btn{
-  z-index: 100;
+  background: none;
+  border: none;
+  z-index: 10;
 }
 
 .media{
