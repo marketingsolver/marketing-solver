@@ -4251,6 +4251,7 @@ const closeBtn = document.getElementById('closeBtn');
 // Function to show the popup
 function openPopup() {
   web_serv.style.display = 'block';
+  body.style.opacity= (.5)
 }
 
 // Function to close the popup

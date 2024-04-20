@@ -176,7 +176,7 @@
             <dotlottie-player src="https://lottie.host/6c6d1a37-e1d9-49ee-9380-fc2866dc8369/sjLGWHx2XT.json"
               background="transparent" speed="1" loop autoplay></dotlottie-player>
           </div>
-          <div class="col-lg-6 col-md-7 px-2" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-6 col-md-12 px-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="h3 mb-2">Let our <strong>Agile Team</strong> understand and serve your needs.</div>
             <p class="text-secondary mb-3"> Our team embodies this spirit of collaboration, thriving on the synergy
               created when diverse talents unite towards a common goal. In our team, every member is valued for their
@@ -346,18 +346,17 @@
                     such as purchases or subscriptions.</p>
                 </div>
               </div>
-            </div>
-          </div> -->
-
+            </div> -->
           <!-- Web Services PopUp Box Open -->
 
-          <div class="popup web_serv position-fixed top-50 start-50 translate-middle" id="web_serv">
-            <div class="popup-box col-lg-8 rounded-5 p-lg-5 p-2 p-md-4 p-sm-3 text-light position-absolute top-50 start-50 translate-middle">
+          <div class="popup web_serv position-absolute top-50 start-50 translate-middle" id="web_serv">
+            <div class="popup-box col-lg-8 rounded-5 p-lg-5 p-2 p-md-4 p-sm-3 text-light position-absolute top-50 start-50 translate-middle overflow-visible">
               <button class="close-btn text-light fs-1 position-absolute end-0 translate-middle"
                 onclick="closeWeb()" id="closeBtn"><i class="fa-solid fa-xmark" style="color: #ff0000;"></i></button>
-              <h2>Web design or Web Development services</h2>
-              <div class="d-lg-flex justify-content-between">
-              <div class="media-content col-lg-6 col-12" style="color: #ff0000;">
+                <div class="d-lg-flex justify-content-between">
+                  <div class="media-content col-lg-6 col-12" style="color: #ff0000;">
+                    <img class=" col-lg-1 col-2 position-relative top-0 start-50 translate-middle-x" src="img/youtube.png" alt="">
+                    <p class="col-12 text-center" style="color: red; font-weight: bold;">YouTube Marketing</p>
                 <ul>
                   <li><i class="fa-solid fa-check"></i> Views</li>
                   <li><i class="fa-solid fa-check"></i> Subscriber Growth</li>
@@ -368,7 +367,8 @@
                   <li><i class="fa-solid fa-check"></i> Average Watch Time</li>
                 </ul>
               </div>
-              <p class="pop-para col-lg-6 col-12" style="color: #ff0000;">Its integral components of digital marketing strategies aimed at establishing a strong online presence.
+              <div class="text-content col-lg-6 col-12">
+              <p class="pop-para rounded-5 p-3" style="color: #ffffff; background: #ff0000;">Its integral components of digital marketing strategies aimed at establishing a strong online presence.
                 Web design involves the creation and layout of a website, encompassing its visual aesthetics,
                 functionality, and user experience. This includes elements such as graphic design, navigation structure,
                 and content placement, all tailored to engage and retain visitors. Effective web design ensures that a
@@ -378,6 +378,7 @@
                 management system (CMS) setup. Website creation services ensure that the design vision is translated
                 into a functioning digital platform that meets the specific needs and goals of the business or brand.
               </p>
+            </div>
             </div>
             </div>
           </div>
@@ -434,7 +435,7 @@
             <div class="container position-relative">
 
               <div class="row price-table">
-                <div class="col-sm-4 card-bg ">
+                <div class="col-sm-6 col-md-4 card-bg ">
                   <div class="price-card text-center">
                     <div class="title">
                       <i class="fa fa-solid fa-lightbulb" aria-hidden="true"></i>
@@ -459,7 +460,7 @@
                   </div>
                 </div>
 
-                <div class="col-sm-4 card-bg">
+                <div class="col-sm-6 col-md-4 card-bg">
                   <div class="price-card text-center">
                     <div class="title">
                       <i class="fa fa-solid fa-star" aria-hidden="true"></i>
@@ -484,7 +485,7 @@
                   </div>
                 </div>
 
-                <div class="col-sm-4 card-bg">
+                <div class="col-sm-6 col-md-4 card-bg">
                   <div class="price-card text-center">
                     <div class="title">
                       <i class="fa fa-solid fa-crown" aria-hidden="true"></i>
@@ -657,25 +658,25 @@
           <div class="row">
             <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
               <div class="bg-light my-2 p-3 pt-2 rounded-5">
-                <form action="https://formspree.io/your@email.com" method="POST">
+                <form action="contact.php" method="POST">
                   <div class="form-group my-2">
                     <label for="name" class="form-label fw-bolder">Name</label>
                     <input class="form-control rounded-5" type="text" id="name" name="name" required>
                   </div>
                   <div class="form-group my-2">
                     <label for="email" class="form-label fw-bolder">Email</label>
-                    <input class="form-control rounded-5" type="email" id="email" name="_replyto" required>
+                    <input class="form-control rounded-5" type="email" id="email" name="email" required>
                   </div>
                   <div class="form-group my-2">
                     <label for="phone" class="form-label fw-bolder">Mobile</label>
-                    <input class="form-control rounded-5" type="tel" id="phone" name="_replyto" required>
+                    <input class="form-control rounded-5" type="tel" id="phone" name="mobile" required>
                   </div>
                   <div class="form-group my-2">
                     <label for="message" class="form-label fw-bolder">Message</label>
                     <textarea class="form-control rounded-5" style="resize: none;" id="message" name="message" rows="4"
                       required></textarea>
                   </div>
-                  <button class="btn btn-main mt-2" type="submit">Send</button>
+                  <button class="btn btn-main mt-2" name="submit" type="submit">Send</button>
                 </form>
               </div>
             </div>
