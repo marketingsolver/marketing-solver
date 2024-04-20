@@ -51,6 +51,7 @@ body {
   line-height: 1.6;
   color: #212529;
   background-color: #fff;
+  overflow: hidden;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
@@ -1339,7 +1340,7 @@ progress {
     width: 89%;
     height: 64%;
     padding: 7% 3% 1% 4% !important;
-    overflow: scroll;
+    /* overflow: scroll; */
 }
    
 }
@@ -3370,7 +3371,7 @@ fieldset:disabled .btn {
 
 .popup{
   width: 100vw;
-  height: 100vh;
+  height: 10000%;
   background: #07070728;
   backdrop-filter: blur(3px);
   z-index: 10;
@@ -3378,27 +3379,21 @@ fieldset:disabled .btn {
 }
 
 .popup-box{
-  height: 80vh;
-background: rgb(48, 196, 255);
+  max-height: 70vh;
+background: white;
 }
 
 .popup-box .media-content{
   display: flex;
   flex-direction: column;
-  border: 1px solid #0dcaf0;
   border-radius: 5px;
-  box-shadow: ;
-}
-
-.popup-box h2{
-  color: #3fe598;
 }
 
 .popup-grid{
   display: block;
 }
 
-.popup-box p{
+.popup-box .text-content p{
   color: white;
 }
 
