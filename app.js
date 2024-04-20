@@ -4290,12 +4290,12 @@ const closeSeoBtn = document.getElementById('closeSeo');
 
 // Function to show the popup
 function openSeo() {
-  seo_strat.style.display = 'block';
+  seo_start.style.display = 'block';
 }
 
 // Function to close the popup
 function closeSeo() {
-  seo_strat.style.display = 'none';
+  seo_start.style.display = 'none';
 }
 
 openSeo();
