@@ -3375,7 +3375,7 @@ fieldset:disabled .btn {
   background: #07070728;
   backdrop-filter: blur(3px);
   z-index: 10;
-  /* display: none; */
+  display: none;
 }
 
 .popup-box{
