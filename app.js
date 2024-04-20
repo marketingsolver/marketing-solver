@@ -4299,3 +4299,15 @@ function closeSeo() {
 
 openSeo();
 closeSeo();
+
+// template-popup
+
+document.querySelectorAll('.bg-card img').forEach(image =>{
+  image.onclick = () =>{
+  document.querySelector('.popup-image').style.display = 'block';
+  document.querySelector('.popup-image img').src = image.getAttribute('src');
+  }
+  });
+  document.querySelector('.popup-image span').onclick=() =>{
+  document.querySelector('.popup-image').style.display = 'none'; I
+  }
