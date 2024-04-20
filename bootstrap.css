@@ -1269,6 +1269,13 @@ progress {
   position: relative;
 }
 
+@media screen and (max-width:1024px){
+  .map iframe {
+    width: 460px;
+    height: 271px;
+}
+}
+
 
 @media screen and (max-width:992px) {
   .gif{
