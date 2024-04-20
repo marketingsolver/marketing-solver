@@ -1269,6 +1269,13 @@ progress {
   position: relative;
 }
 
+
+@media screen and (max-width:1182px) {
+  .popup-box {
+    overflow: scroll;
+   }
+}
+
 @media screen and (max-width:1024px){
   .map iframe {
     width: 460px;
@@ -1278,6 +1285,7 @@ progress {
 
 
 @media screen and (max-width:992px) {
+
   .gif{
     width: 80%;
     height: 80%;
@@ -1287,7 +1295,17 @@ progress {
     width: 343px;
     height: 241px;
   }
+
 }
+
+@media screen and (max-width:768px){
+  .popup-box {
+    width: 83%;
+    height: 58%;
+    padding: 5% 3% 3% 3% !important;
+  }
+}
+
 @media screen and (max-width:430px) {
   .gif{
     width: 200%;
@@ -1298,10 +1316,11 @@ progress {
     width: 370px;
     height: 250px;
   }
+
    
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:390px) {
   .gif{
     width: 200%;
     height: 110%;
@@ -1315,6 +1334,13 @@ progress {
     width: 320px;
     height: 150px;
   }
+
+  .popup-box {
+    width: 89%;
+    height: 64%;
+    padding: 7% 3% 1% 4% !important;
+    overflow: scroll;
+}
    
 }
 
@@ -3352,13 +3378,20 @@ fieldset:disabled .btn {
 }
 
 .popup-box{
-background: white;
-overflow: hidden;
+  height: 80vh;
+background: rgb(48, 196, 255);
 }
 
-.popup-box .media{
+.popup-box .media-content{
   display: flex;
   flex-direction: column;
+  border: 1px solid #0dcaf0;
+  border-radius: 5px;
+  box-shadow: ;
+}
+
+.popup-box h2{
+  color: #3fe598;
 }
 
 .popup-grid{
