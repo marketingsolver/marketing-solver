@@ -137,7 +137,7 @@
       <div class="container">
         <div class="row py-3">
           <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="100">
-            <div class="position-relative rounded-5 p-3 bg-card mb-3">
+            <div class="position-relative rounded-5 p-3 bg-card mb-3" onclick="ytCard()" id="openYtCard">
               <div class="display-y"></div>
               <img class="col-8" src="img/youtube.png" alt="youtube">
               <h3 class="h4 mt-2">Youtube Marketing</h3>
@@ -310,7 +310,7 @@
           <!-- YouTube Marketing PopUp Box Open -->
           <div class="popup position-absolute top-50 start-50 translate-middle" id="popup">
             <div
-              class="popup-box col-lg-8 rounded-5 p-lg-5 p-2 p-md-4 p-sm-3 text-light position-absolute top-50 start-50 translate-middle overflow-visible">
+              class="popup-box col-lg-8 rounded-5 p-lg-5 p-2 p-md-4 p-sm-3 text-light position-absolute top-50 start-50 translate-middle overflow-visible" id="ytpopup">
               <button class="close-btn text-light fs-1 position-absolute end-0 translate-middle" onclick="closePopup()"
                 id="closeButton"><i class="fa-solid fa-xmark" style="color: #ff0000;"></i></button>
               <div class="d-lg-flex justify-content-between">
@@ -481,7 +481,7 @@
         </div>
       </section>
       <section>
-        <div class="wave-bg"></div>
+        <div class="wave-bg" id="plan"></div>
         <div class="row">
           <div class="container-fluid">
             <div class="text-center mb-5">
@@ -820,19 +820,19 @@
           </div>
           <div class="col-lg-2 col-md-6 mb-3">
             <div class="text-uppercase mb-2">Services</div>
-            <div class="nav flex-column"><a class="nav-link px-0" href="#!">Design</a><a class="nav-link px-0"
-                href="#!">Development</a><a class="nav-link px-0" href="#!">Branding</a><a class="nav-link px-0"
-                href="#!">Marketing</a></div>
+            <div class="nav flex-column"><a class="nav-link px-0" href="#services">YouTube Marketing</a><a class="nav-link px-0"
+                href="#services">Meta Compaings</a><a class="nav-link px-0" href="#services">Web Services</a><a class="nav-link px-0"
+                href="#services">SEO Strategy</a></div>
           </div>
           <div class="col-lg-2 col-md-6 mb-3">
             <div class="text-uppercase mb-2">Products</div>
-            <div class="nav flex-column"><a class="nav-link px-0" href="#!">Services</a><a class="nav-link px-0"
-                href="#!">Portfolio</a><a class="nav-link px-0" href="#!">Pricing</a></div>
+            <div class="nav flex-column"><a class="nav-link px-0" href="#services">Services</a><a class="nav-link px-0"
+                href="#portfolio">Portfolio</a><a class="nav-link px-0" href="#plan">Pricing</a></div>
           </div>
           <div class="col-lg-2 col-md-6 mb-3">
             <div class="text-uppercase mb-2">About</div>
-            <div class="nav flex-column"><a class="nav-link px-0" href="#!">About</a><a class="nav-link px-0"
-                href="#!">Contact</a><a class="nav-link px-0" href="#!">Terms</a><a class="nav-link px-0"
+            <div class="nav flex-column"><a class="nav-link px-0" href="#about">About</a><a class="nav-link px-0"
+                href="#contact">Contact</a><a class="nav-link px-0" href="#!">Terms</a><a class="nav-link px-0"
                 href="#!">Privacy</a></div>
           </div>
           <div class="col-lg-2 col-md-6 mb-3">
