@@ -3389,6 +3389,16 @@ background: white;
   border-radius: 5px;
 }
 
+.popup-box .media-cover{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 8px 10px 12px rgba(0, 0, 0, 0.568);
+}
+
 .popup-grid{
   display: block;
 }
