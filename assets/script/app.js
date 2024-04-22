@@ -4311,3 +4311,82 @@ document.querySelectorAll('.bg-card img').forEach(image =>{
   document.querySelector('.popup-image span').onclick=() =>{
   document.querySelector('.popup-image').style.display = 'none'; I
   }
+
+// template POPUP 
+// YouTube Marketing Emplate
+const tempButton = document.getElementById('tempButton');
+// const popup = document.getElementById('popup');
+const closetempButton = document.getElementById('closeTempBtn');
+
+// Function to show the popup
+function showTemp() {
+  yt_temp.style.display = 'block';
+}
+
+// Function to close the popup
+function closeTemp() {
+  yt_temp.style.display = 'none';
+}
+
+showTemp();
+closeTemp();
+
+// Web Services Emplate
+const webButton = document.getElementById('WebtempBtn');
+// const popup = document.getElementById('popup');
+const closewebButton = document.getElementById('closeWebbtn');
+
+// Function to show the popup
+function showWebTemp() {
+  web_temp.style.display = 'block';
+}
+
+// Function to close the popup
+function closeWebTemp() {
+  web_temp.style.display = 'none';
+}
+
+showWebTemp();
+closeWebTemp();
+
+
+// Facebook Meta Emplate
+const faceButton = document.getElementById('FacetempBtn');
+// const popup = document.getElementById('popup');
+const closefaceButton = document.getElementById('closeFacebtn');
+
+// Function to show the popup
+function showFaceTemp() {
+  face_temp.style.display = 'block';
+}
+
+// Function to close the popup
+function closeFaceTemp() {
+  face_temp.style.display = 'none';
+}
+
+showFaceTemp();
+closeFaceTemp();
+
+
+// SEO Strategy Meta Emplate
+const seoButton = document.getElementById('SEOtempBtn');
+// const popup = document.getElementById('popup');
+const closeseoButton = document.getElementById('closeSEObtn');
+
+// Function to show the popup
+function showSEOTemp() {
+  seo_temp.style.display = 'block';
+}
+
+// Function to close the popup
+function closeSEOTemp() {
+  seo_temp.style.display = 'none';
+}
+
+showSEOTemp();
+closeSEOTemp();
+
+
+
+

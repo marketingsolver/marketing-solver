@@ -38,7 +38,8 @@
       <div class="container">
         <a class="link-dark navbar-brand site-title mb-0" href="#">
 
-          <img class="col-12 col-sm-12 col-md-8 col-lg-6" src="assets/img/Digital Marketing Agency brand.gif" alt="brand">
+          <img class="col-12 col-sm-12 col-md-8 col-lg-6" src="assets/img/Digital Marketing Agency brand.gif"
+            alt="brand">
 
         </a>
 
@@ -133,118 +134,168 @@
               the overall value proposition.</p>
           </div>
         </div>
-      <div class="container position-relative">
-        <div class="row py-3">
-          <div class="position-relative col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="100">
-            <!-- <img class="position-absolute top-50 start-50 translate-middle z-3 col-8 col-lg-3" src="img/youtube template.png" alt="template"> -->
-            <div class="position-relative rounded-5 p-3 bg-card mb-3">
-              <div class="display-y"></div>
-              <img class="col-8" src="assets/img/youtube.png" alt="youtube">
-              <h3 class="h4 mt-2">Youtube Marketing</h3>
+        <div class="container position-relative">
+          <div class="row py-3">
+            <div class="position-relative col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="100">
+              <!-- <img class="position-absolute top-50 start-50 translate-middle z-3 col-8 col-lg-3" src="img/youtube template.png" alt="template"> -->
+              <div class="position-relative rounded-5 p-3 bg-card mb-3" onclick="showTemp()" id="tempButton">
+                <div class="display-y"></div>
+                <img class="col-8" src="assets/img/youtube.png" alt="youtube">
+                <h3 class="h4 mt-2">Youtube Marketing</h3>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="200">
+              <div class="position-relative rounded-5 p-3 bg-card mb-3" onclick="showWebTemp()" id="WebtempBtn">
+                <div class="display-w"></div>
+                <img class="col-8" src="assets/img/web service.png" alt="youtube">
+                <h3 class="h4 mt-2">Web Services</h3>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="300">
+              <div class="position-relative rounded-5 p-3 bg-card mb-3" onclick="showFaceTemp()" id="FacetempBtn">
+                <div class="display-f"></div>
+                <img class="col-8" src="assets/img/facebook meta.png" alt="facebook">
+                <h3 class="h4 mt-2">Facebook Meta</h3>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="400">
+              <div class="position-relative rounded-5 p-3 bg-card mb-3" onclick="showSEOTemp()" id="SEOtempBtn">
+                <div class="display-s"></div>
+                <img class="col-8" src="assets/img/google ads.png" alt="seo">
+                <h3 class="h4 mt-2">SEO Strategy</h3>
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="position-relative rounded-5 p-3 bg-card mb-3">
-              <div class="display-w"></div>
-              <img class="col-8" src="assets/img/web service.png" alt="youtube">
-              <h3 class="h4 mt-2">Web Services</h3>
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="300">
-          <div class="position-relative rounded-5 p-3 bg-card mb-3">
-            <div class="display-f"></div>
-            <img class="col-8" src="assets/img/facebook meta.png" alt="facebook">
-            <h3 class="h4 mt-2">Facebook Meta</h3>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 text-center" data-aos="fade-up" data-aos-delay="400">
-          <div class="position-relative rounded-5 p-3 bg-card mb-3">
-            <div class="display-s"></div>
-            <img class="col-8" src="assets/img/google ads.png" alt="seo">
-            <h3 class="h4 mt-2">SEO Strategy</h3>
-          </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row py-3 py-lg-5">
-          <div class="gif col-lg-6 col-md-5 order-md-last" data-aos="fade-zoom-in" data-aos-delay="50"
-            data-aos-easing="ease-in-back">
-            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-              type="module"></script>
 
-            <dotlottie-player src="https://lottie.host/6c6d1a37-e1d9-49ee-9380-fc2866dc8369/sjLGWHx2XT.json"
-              background="transparent" speed="1" loop autoplay></dotlottie-player>
+          <!-- Template POPUP Code -->
+          <!-- You Tube Template -->
+          <div class="yt_temp position-absolute top-50 start-50 translate-middle" id="yt_temp">
+            <div
+            class="col-10 col-lg-8 col-md-4 rounded-5 p-lg-5 p-2 p-md-4 p-sm-3 text-light position-absolute top-50 start-50 translate-middle overflow-visible"
+            id="ytpopup"><button class="close-btn col-12 text-light position-absolute top-50 start-50 translate-middle" onclick="closeTemp()"
+              id="closeTemptn">
+              <img class="col-12 col-lg-3 position-absolute top-50 start-50 translate-middle" src="assets/img/youtube template.png" alt="">
+            </button>
           </div>
-          <div class="col-lg-6 col-md-12 px-2" data-aos="zoom-in" data-aos-delay="100">
-            <div class="h3 mb-2">Let our <strong>Agile Team</strong> understand and serve your needs.</div>
-            <p class="text-secondary mb-3"> Our team embodies this spirit of collaboration, thriving on the synergy
-              created when diverse talents unite towards a common goal. In our team, every member is valued for their
-              distinct contributions. We recognize that each person brings something special to the table, whether it's
-              their expertise in a particular area, their creativity in problem-solving, or their ability to motivate
-              and inspire others.</p>
-            <div class="row">
-              <div class="col-lg-6 mb-2">
-                <div class="border border-3 rounded px-2 py-2 d-flex align-items-center">
-                  <div class="badge rounded-circle me-2"><span class="material-symbols-outlined">
-                      check
-                    </span></div>
-                  <div class="text-secondary fw-bold">Active Colloboration</div>
+          </div>
+
+          <!-- Web Services Template -->
+          <div class="web_temp position-absolute top-50 start-50 translate-middle" id="web_temp">
+            <div
+            class="col-10 col-lg-8 col-md-4 rounded-5 p-lg-5 p-2 p-md-4 p-sm-3 text-light position-absolute top-50 start-50 translate-middle overflow-visible"
+            id="webpopup"><button class="close-btn col-12 text-light position-absolute top-50 start-50 translate-middle" onclick="closeWebTemp()"
+              id="closeWebbtn">
+              <img class="col-12 col-lg-3 position-absolute top-50 start-50 translate-middle" src="assets/img/youtube template.png" alt="">
+            </button>
+          </div>
+          </div>
+
+          <!-- Facebook Met Template -->
+          <div class="face_temp position-absolute top-50 start-50 translate-middle" id="face_temp">
+            <div
+            class="col-10 col-lg-8 col-md-4 rounded-5 p-lg-5 p-2 p-md-4 p-sm-3 text-light position-absolute top-50 start-50 translate-middle overflow-visible"
+            id="facepopup"><button class="close-btn col-12 text-light position-absolute top-50 start-50 translate-middle" onclick="closeFaceTemp()"
+              id="closeFacebtn">
+              <img class="col-12 col-lg-3 position-absolute top-50 start-50 translate-middle" src="assets/img/youtube template.png" alt="">
+            </button>
+          </div>
+          </div>
+
+          <!-- SEO Strategy Template -->
+          <div class="seo_temp position-absolute top-50 start-50 translate-middle" id="seo_temp">
+            <div
+            class="col-10 col-lg-8 col-md-4 rounded-5 p-lg-5 p-2 p-md-4 p-sm-3 text-light position-absolute top-50 start-50 translate-middle overflow-visible"
+            id="seopopup"><button class="close-btn col-12 text-light position-absolute top-50 start-50 translate-middle" onclick="closeSEOTemp()"
+              id="closeSEObtn">
+              <img class="col-12 col-lg-3 position-absolute top-50 start-50 translate-middle" src="assets/img/youtube template.png" alt="">
+            </button>
+          </div>
+          </div>
+
+        </div>
+        <div class="container">
+          <div class="row py-3 py-lg-5">
+            <div class="gif col-lg-6 col-md-5 order-md-last" data-aos="fade-zoom-in" data-aos-delay="50"
+              data-aos-easing="ease-in-back">
+              <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                type="module"></script>
+
+              <dotlottie-player src="https://lottie.host/6c6d1a37-e1d9-49ee-9380-fc2866dc8369/sjLGWHx2XT.json"
+                background="transparent" speed="1" loop autoplay></dotlottie-player>
+            </div>
+            <div class="col-lg-6 col-md-12 px-2" data-aos="zoom-in" data-aos-delay="100">
+              <div class="h3 mb-2">Let our <strong>Agile Team</strong> understand and serve your needs.</div>
+              <p class="text-secondary mb-3"> Our team embodies this spirit of collaboration, thriving on the synergy
+                created when diverse talents unite towards a common goal. In our team, every member is valued for their
+                distinct contributions. We recognize that each person brings something special to the table, whether
+                it's
+                their expertise in a particular area, their creativity in problem-solving, or their ability to motivate
+                and inspire others.</p>
+              <div class="row">
+                <div class="col-lg-6 mb-2">
+                  <div class="border border-3 rounded px-2 py-2 d-flex align-items-center">
+                    <div class="badge rounded-circle me-2"><span class="material-symbols-outlined">
+                        check
+                      </span></div>
+                    <div class="text-secondary fw-bold">Active Colloboration</div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-6 mb-2">
-                <div class="border border-3 rounded px-2 py-2 d-flex align-items-center">
-                  <div class="badge rounded-circle me-2"><span class="material-symbols-outlined">
-                      check
-                    </span></div>
-                  <div class="text-secondary fw-bold">On-Schedule Delivery</div>
+                <div class="col-lg-6 mb-2">
+                  <div class="border border-3 rounded px-2 py-2 d-flex align-items-center">
+                    <div class="badge rounded-circle me-2"><span class="material-symbols-outlined">
+                        check
+                      </span></div>
+                    <div class="text-secondary fw-bold">On-Schedule Delivery</div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-6 mb-2">
-                <div class="border border-3 rounded px-2 py-2 d-flex align-items-center">
-                  <div class="badge rounded-circle me-2"><span class="material-symbols-outlined">
-                      check
-                    </span></div>
-                  <div class="text-secondary fw-bold">After Sales Services</div>
+                <div class="col-lg-6 mb-2">
+                  <div class="border border-3 rounded px-2 py-2 d-flex align-items-center">
+                    <div class="badge rounded-circle me-2"><span class="material-symbols-outlined">
+                        check
+                      </span></div>
+                    <div class="text-secondary fw-bold">After Sales Services</div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-6 mb-2">
-                <div class="border border-3 rounded px-2 py-2 d-flex align-items-center">
-                  <div class="badge rounded-circle me-2"><span class="material-symbols-outlined">
-                      check
-                    </span></div>
-                  <div class="text-secondary fw-bold">24x7 On-Support</div>
+                <div class="col-lg-6 mb-2">
+                  <div class="border border-3 rounded px-2 py-2 d-flex align-items-center">
+                    <div class="badge rounded-circle me-2"><span class="material-symbols-outlined">
+                        check
+                      </span></div>
+                    <div class="text-secondary fw-bold">24x7 On-Support</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row py-3 py-lg-5">
-          <div class="gif col-lg-6 col-md-5" data-aos="fade-zoom-in" data-aos-delay="50" data-aos-easing="ease-in-back">
-            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-              type="module"></script>
-            <dotlottie-player src="https://lottie.host/0cb48712-03be-4222-9c9e-15510d92ca61/I5vc5p5ES1.json"
-              background="transparent" speed="1" loop autoplay></dotlottie-player>
-          </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 px-3 py-5" data-aos="zoom-in" data-aos-delay="100">
-            <div class="col-12 px-2" data-aos="zoom-in" data-aos-delay="100">
-              <div class="h3 mb-2">We believe in <strong>Long Term Partnership</strong>.</div>
-              <p class="text-secondary mb-3">In today's fast-paced business landscape, where trends evolve at lightning
-                speed and competition is fierce, the value of forging enduring partnerships cannot be overstated. At
-                marketingsolver.in, we firmly believe that cultivating long-term relationships with our clients,
-                suppliers, and stakeholders is fundamental to mutual success and sustained growth.</p>
-              <p class="text-secondary mb-3">At marketingsolver.in we are driven by a shared commitment to value
-                creation. We believe that by focusing on long-term partnerships, we can unlock new opportunities,
-                mitigate risks, and adapt to changing market dynamics more effectively. Whether it's through joint
-                product development, strategic alliances, or shared resources, we are dedicated to maximizing the value
-                we deliver to our partners and helping them achieve their long-term objectives.</p>
+          <div class="row py-3 py-lg-5">
+            <div class="gif col-lg-6 col-md-5" data-aos="fade-zoom-in" data-aos-delay="50"
+              data-aos-easing="ease-in-back">
+              <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                type="module"></script>
+              <dotlottie-player src="https://lottie.host/0cb48712-03be-4222-9c9e-15510d92ca61/I5vc5p5ES1.json"
+                background="transparent" speed="1" loop autoplay></dotlottie-player>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 px-3 py-5" data-aos="zoom-in" data-aos-delay="100">
+              <div class="col-12 px-2" data-aos="zoom-in" data-aos-delay="100">
+                <div class="h3 mb-2">We believe in <strong>Long Term Partnership</strong>.</div>
+                <p class="text-secondary mb-3">In today's fast-paced business landscape, where trends evolve at
+                  lightning
+                  speed and competition is fierce, the value of forging enduring partnerships cannot be overstated. At
+                  marketingsolver.in, we firmly believe that cultivating long-term relationships with our clients,
+                  suppliers, and stakeholders is fundamental to mutual success and sustained growth.</p>
+                <p class="text-secondary mb-3">At marketingsolver.in we are driven by a shared commitment to value
+                  creation. We believe that by focusing on long-term partnerships, we can unlock new opportunities,
+                  mitigate risks, and adapt to changing market dynamics more effectively. Whether it's through joint
+                  product development, strategic alliances, or shared resources, we are dedicated to maximizing the
+                  value
+                  we deliver to our partners and helping them achieve their long-term objectives.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       <section class="wave position-relative" id="services">
         <div class="wave-bg wave-top"></div>
@@ -311,7 +362,8 @@
           <!-- YouTube Marketing PopUp Box Open -->
           <div class="popup position-absolute top-50 start-50 translate-middle" id="popup">
             <div
-              class="popup-box col-lg-8 rounded-5 p-lg-5 p-2 p-md-4 p-sm-3 text-light position-absolute top-50 start-50 translate-middle overflow-visible" id="ytpopup">
+              class="popup-box col-lg-8 rounded-5 p-lg-5 p-2 p-md-4 p-sm-3 text-light position-absolute top-50 start-50 translate-middle overflow-visible"
+              id="ytpopup">
               <button class="close-btn text-light fs-1 position-absolute end-0 translate-middle" onclick="closePopup()"
                 id="closeButton"><i class="fa-solid fa-xmark" style="color: #ff0000;"></i></button>
               <div class="d-lg-flex justify-content-between">
@@ -821,9 +873,9 @@
           </div>
           <div class="col-lg-2 col-md-6 mb-3">
             <div class="text-uppercase mb-2">Services</div>
-            <div class="nav flex-column"><a class="nav-link px-0" href="#services">YouTube Marketing</a><a class="nav-link px-0"
-                href="#services">Meta Compaings</a><a class="nav-link px-0" href="#services">Web Services</a><a class="nav-link px-0"
-                href="#services">SEO Strategy</a></div>
+            <div class="nav flex-column"><a class="nav-link px-0" href="#services">YouTube Marketing</a><a
+                class="nav-link px-0" href="#services">Meta Compaings</a><a class="nav-link px-0" href="#services">Web
+                Services</a><a class="nav-link px-0" href="#services">SEO Strategy</a></div>
           </div>
           <div class="col-lg-2 col-md-6 mb-3">
             <div class="text-uppercase mb-2">Products</div>
