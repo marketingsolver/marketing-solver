@@ -3378,6 +3378,43 @@ fieldset:disabled .btn {
   display: none;
 }
 
+.yt_temp{
+  width: 100vw;
+  height: 10000%;
+  background: #07070728;
+  backdrop-filter: blur(3px);
+  z-index: 10;
+  display: none;
+}
+
+.web_temp{
+  width: 100vw;
+  height: 10000%;
+  background: #07070728;
+  backdrop-filter: blur(3px);
+  z-index: 10;
+  display: none;
+}
+
+.face_temp{
+  width: 100vw;
+  height: 10000%;
+  background: #07070728;
+  backdrop-filter: blur(3px);
+  z-index: 10;
+  display: none;
+}
+
+.seo_temp{
+  width: 100vw;
+  height: 10000%;
+  background: #07070728;
+  backdrop-filter: blur(3px);
+  z-index: 10;
+  display: none;
+}
+
+
 .popup-box{
   max-height: 70vh;
 background: white;

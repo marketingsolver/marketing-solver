@@ -137,12 +137,12 @@ img.avatar {
 }
 
 .display-y{
-    position: absolute;
+  position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
+    width: 1px;
+    height: 1px;
     border-radius: 50%;
     background-color: red;
     transition: .8s ease-in;
@@ -150,12 +150,13 @@ img.avatar {
 }
 
 .display-w{
-    position: absolute;
+
+  position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
+    width: 1px;
+    height: 1px;
     border-radius: 50%;
     background-color: rgb(0, 194, 16);
     transition: .8s ease-in;
@@ -188,11 +189,7 @@ img.avatar {
     z-index: -1;
 }
 
-.bg-card:hover .display-y, .bg-card:hover .display-w{
-    transform: scale(50);
-}
-
-.bg-card:hover .display-f, .bg-card:hover .display-s{
+.bg-card:hover .display-y, .bg-card:hover .display-w,.bg-card:hover .display-f, .bg-card:hover .display-s{
     transform: scale(800);
 }
 
